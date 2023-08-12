@@ -1,0 +1,240 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+*{
+    margin: 0;
+    padding: 0;
+    border:border-box;
+    color: white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+.btn1{
+    border-style: none;
+    border: 1px solid white;
+    padding: 10px 40px;
+    background-color:transparent;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.fa-solid {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.down-icon{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.logo > img {
+    margin-top: 20px;
+}
+.btn2{
+    border-style: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    margin-left: 20px;
+
+}
+
+/* Home Page Content */
+section{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Netflix.jpg);
+    background-repeat:no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    filter: brightness(0.7);
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+}
+.content1 > h1 {
+    font-size: 45px;
+    padding: 10px;
+}
+.content1 > p {
+    font-size: 20px;
+    padding: 10px;
+     
+}
+input{
+    border-style: none;
+    padding: 10px 80px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.btn3{
+    border-style: none;
+    padding: 8px 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: red;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+
+}
+
+/* Container 1 */
+
+/* .container{
+    background-color: black;
+} */
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 4px solid rgb(63, 62, 62);
+    height: 550px;
+    align-items: center;
+    background-image: radial-gradient(circle,#04020f,black);
+}
+.para1 > h1 {
+    font-size: 40px;
+    padding: 10px;
+}
+.para1 > p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.paraimage3{
+    position: relative;
+}
+
+.boxshot{
+    display: flex;
+    height: 80px;
+    width: 300px;
+    padding: 7px;
+    position: absolute;
+    left: 140px;
+    bottom: 8px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    gap: 5px;
+    align-items: center;
+
+}
+
+/* FAQ */
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid #3f3e3e;
+    height: 700px;
+    background-image: linear-gradient(to bottom,black,#03010e);
+
+
+}
+.FAQ > h1 {
+    padding: 15px;
+} 
+.FAQ1{
+    width: 70%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(36, 33, 33);
+    position: relative;
+    margin-top: 15px;
+    
+}
+.FAQ1 > h3{
+    margin-left: 10px;
+}
+.FAQ1::after{
+    content: '+';
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+
+}
+.Ans1{
+    height: 150px;
+    background-color: #191724;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    top: 40px;
+    width: 1060px;
+
+}
+.FAQ1:hover .Ans1{
+    display: block;
+    background: #302b2b;
+}
+.FAQ1:hover .Ans1::after{
+    transform: rotate(135deg);
+}
+.bottomcontent{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.bottomcontent > h2 {
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom,black,#131023);
+    height: 500px;
+    align-items: center;
+}
+.BTN{
+    border-style: none;
+    border: 1px solid white;
+    padding: 10px 40px;
+    background-color:transparent;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.link > a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:850px) {
+    section{
+        height: 800px;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+    .paraimage1 > img{
+        height: 300px;
+        width: 400px;
+        
+    }
+
+    .bottomcontent > h2 {
+        font-size: 15px;
+    }
+}
+
